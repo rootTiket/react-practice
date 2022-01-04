@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+           class GuGuDan extends React.component {
+               constructor(props){
+                   super(props);
+                   this.state ={
+                    first:Math.ceil(Math.random *9),
+                    second: Math.ceil()(Math.random*9),
+                    value: '',
+                    result: '',
+                   };
+               }
+               render(){
+                   return (
+                       <div>
+                        <div>{}곱하기{}는?</div>
+                        </div>
+                   );
+               }
+           }
+        </script>
+        <script type="text/babel">
+            ReactDOM.render(<GuGuDan/>,document.querySelector('#root'));
+        </script>
+    </body>
+</html>
